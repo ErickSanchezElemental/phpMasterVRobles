@@ -29,6 +29,14 @@ var_dump($arrayDeConsultas);
 // Arreglo asociativo con todas las consultas
 while ($aDeCon = mysqli_fetch_assoc($consulta)) {
     var_dump($aDeCon);
+
+    // Mostrar un dato concreto
+   echo '
+    <br>
+    <br>
+    ';
+    echo $aDeCon ['descripcion'];
+    echo $aDeCon ['titulo'];
 };
 
 
