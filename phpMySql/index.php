@@ -19,12 +19,11 @@ $query = ('
 // Creamos la variable que consultara, la cual toma la conexion y la consulta
 $consulta = mysqli_query($conection,$query );
 
-// Interpretamos el resultado en arreglos 
+/* Interpretamos el resultado en arreglos */
 
 // Arreglo asociativo del primer registro
 $arrayDeConsultas = mysqli_fetch_assoc($consulta);
 var_dump($arrayDeConsultas);
-
 
 // Arreglo asociativo con todas las consultas
 while ($aDeCon = mysqli_fetch_assoc($consulta)) {
@@ -38,7 +37,6 @@ while ($aDeCon = mysqli_fetch_assoc($consulta)) {
     echo $aDeCon ['descripcion'];
     echo $aDeCon ['titulo'];
 };
-
 
 
 
