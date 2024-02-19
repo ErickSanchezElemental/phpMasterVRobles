@@ -38,6 +38,7 @@ while ($aDeCon = mysqli_fetch_assoc($consulta)) {
     echo $aDeCon ['titulo'];
 };
 
+session_start();
 
 
 ?>
